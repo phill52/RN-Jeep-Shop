@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, ImageBackground} from 'react-native';
 import styles from './styles.js';
-import StyledButton from './BuyButtons/index.js';
+import StyledButton from '../BuyButtons/index.js';
 
 const CarItem = (props) => {
     return(
