@@ -28,9 +28,9 @@ const styles= StyleSheet.create({
         height:'100%',
     },
     cars:{
-        marginTop:'30%',
+        marginTop:'12%',
         flexDirection:'row',
-        justifyContent: 'center',
+        justifyContent:'center',
     }
 });
 

@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     invContainer:{
-        marginTop: 30,
         width: 175,
         height: 175,
         alignItems: 'center',
