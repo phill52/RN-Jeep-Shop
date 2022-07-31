@@ -16,7 +16,7 @@ const CarSale= (props) => {
                 <Text style={styles.title}>{year} {trim}</Text>
                 <Text style={styles.subtitle}> ${price} </Text>
             </View>
-            <Image style={styles.image} source={require({image})} />
+            <Image style={styles.image} source={image} />
             <Button color='#ff0000'  title="Purchase" onPress={()=>Alert.alert('Purchased!')}></Button>
         </View>
     );
