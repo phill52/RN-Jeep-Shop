@@ -6,6 +6,10 @@ const styles= StyleSheet.create({
         height: '100%',
         marginTop: '30%',
     },
+    gridView: {
+        paddingTop: 25,
+        flex: 1,
+    },
     titles:{
         marginTop: '30%',
         width: '100%',
