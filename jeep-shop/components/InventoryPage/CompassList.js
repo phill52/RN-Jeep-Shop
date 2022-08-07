@@ -18,4 +18,17 @@ export default [{
     price: 38315,
     image: require('../../assets/images/CompassModels/limited2022.jpg'),
     },
+    {
+    id:4,
+    year: 2017,
+    trim: "Latitude 4X4",
+    price: 69696,
+    image: require('../../assets/images/CompassModels/latitude2022.jpg'),
+    },
+    {id:5,
+    year: 2014,
+    trim: "(RED) 4X4",
+    price: 222,
+    image: require('../../assets/images/CompassModels/red2022.jpg'),
+    },
 ];
