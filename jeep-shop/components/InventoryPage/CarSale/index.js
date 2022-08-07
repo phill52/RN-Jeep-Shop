@@ -3,7 +3,7 @@ import {View, Text, Alert, Image, Button} from 'react-native';
 import styles from './styles';
 
 const CarSale= (props) => {
-    const {year, trim, price, image, empty} = props;
+    const {id, year, trim, price, image, empty} = props;
     if (empty) {
         return (
             <View style={styles.invContainer}>
@@ -17,7 +17,7 @@ const CarSale= (props) => {
                 <Text style={styles.subtitle}> ${price} </Text>
             </View>
             <Image style={styles.image} source={image} />
-            <Button color='#ff0000'  title="Purchase" onPress={()=>Alert.alert('Purchased!')}></Button>
+            <Button color='#ff0000'  title="Purchase" onPress={() => props.onDelete(id)}></Button>
         </View>
     );
 };
