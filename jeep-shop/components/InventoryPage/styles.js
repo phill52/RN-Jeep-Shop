@@ -4,7 +4,9 @@ const styles= StyleSheet.create({
     pageContainer:{
         width: '100%',
         height: '100%',
-        marginTop: '30%',
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     gridView: {
         paddingTop: 25,
@@ -35,7 +37,21 @@ const styles= StyleSheet.create({
         marginTop:'12%',
         flexDirection:'row',
         justifyContent:'center',
-    }
+    },
+    emptyInventory:{
+        color: '#c9c9c9',
+        fontFamily: 'Helvetica',
+        fontWeight: '100',
+        fontStyle: 'italic',
+        marginTop:20,
+        fontSize: 20,
+        textAlign: 'center',
+    },
+    dropDown:{
+        backgroundColor: '#f5f5f5',
+        width: '40%',
+        marginTop: '2%',
+    },
 });
 
 export default styles;

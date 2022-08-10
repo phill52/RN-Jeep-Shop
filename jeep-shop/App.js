@@ -2,13 +2,27 @@ import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 import CarItem from './components/Car';
 import InventoryPage from './components/InventoryPage';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
+
   return (
-    <View style={styles.container}>
-      <InventoryPage/>
-      <StatusBar style="auto" /> 
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen 
+          name="Home"
+          component={CarItem}
+          options={{
+            headerShown: false,
+        }}
+          />
+        <Stack.Screen
+          name="InventoryPage"
+          component={InventoryPage}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
